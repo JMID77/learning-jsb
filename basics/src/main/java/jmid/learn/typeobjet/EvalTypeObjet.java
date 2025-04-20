@@ -1,6 +1,21 @@
 package jmid.learn.typeobjet;
 
-public class EvalTypeObjet {
+import jmid.learn.Evaluation;
+
+public class EvalTypeObjet extends Evaluation {
+    
+    public EvalTypeObjet() {
+        setActive(false);
+    }
+
+     @Override
+    public void execute() {
+        System.out.println("\n>>>> EvalTypeObjet");
+		evalAdapterEtudiant();
+		evalGeneral();
+		evalAdapter();
+    }
+
     public void evalGeneral() {
         System.out.println("\n>> EvalTypeObjet.evalGeneral()");
         // Type Objet

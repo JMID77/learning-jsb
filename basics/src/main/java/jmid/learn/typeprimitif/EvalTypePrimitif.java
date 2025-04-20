@@ -1,6 +1,20 @@
 package jmid.learn.typeprimitif;
 
-public class EvalTypePrimitif {
+import jmid.learn.Evaluation;
+
+public class EvalTypePrimitif extends Evaluation {
+
+    public EvalTypePrimitif() {
+        setActive(false);
+    }
+
+    
+    @Override
+    public void execute() {
+        System.out.println("\n>>>> EvalTypePrimitif");
+		evalGeneral();
+		evalAdapter();
+    }
 
     public void evalGeneral() {
         System.out.println("\n>> EvalTypePrimitif.evalGeneral()");

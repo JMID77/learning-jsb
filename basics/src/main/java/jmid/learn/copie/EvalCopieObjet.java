@@ -1,6 +1,20 @@
 package jmid.learn.copie;
 
-public class EvalCopieObjet {
+import jmid.learn.Evaluation;
+
+public class EvalCopieObjet extends Evaluation {
+
+    public EvalCopieObjet() {
+        setActive(false);
+    }
+
+    @Override
+    public void execute() {
+        System.out.println("\n>>>> EvalCopieObjet");
+        evalCopieObjetParConstructeur();
+        evalCloneObjet();
+        evalDeepCopy();
+    }
 
     public void evalCopieObjetParConstructeur() {
         System.out.println("\n>> EvalCopieObjet.evalCopieObjetParConstructeur()");

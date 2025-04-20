@@ -2,7 +2,19 @@ package jmid.learn.structcontrol;
 
 import java.util.Scanner;
 
-public class StructureControl {
+import jmid.learn.Evaluation;
+
+public class StructureControl extends Evaluation {
+    public StructureControl() {
+        setActive(false);
+    }
+
+    @Override
+    public void execute() {
+        System.out.println("\n>>>> StructureControl");
+		evalForLoop();
+		evalDoWhileLoop();
+    }
 
 
     public void evalForLoop() {

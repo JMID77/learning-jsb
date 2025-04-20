@@ -3,7 +3,18 @@ package jmid.learn.collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Collections {
+import jmid.learn.Evaluation;
+
+public class Collections extends Evaluation {
+    public Collections() {
+        setActive(true);
+    }
+
+    @Override
+    public void execute() {
+        System.out.println("\n>>>> Collections");
+        evalMapProductWithPrice();
+    }
 
     public void evalMapProductWithPrice() {
         Map<String, Double> productWithPrice = new HashMap<>();
