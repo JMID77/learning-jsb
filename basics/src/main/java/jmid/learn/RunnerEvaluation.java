@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jmid.learn.copie.EvalCopieObjet;
+import jmid.learn.exception.EvalException;
+import jmid.learn.poo.EvalPOO;
 import jmid.learn.structcontrol.StructureControl;
 import jmid.learn.typeobjet.EvalTypeObjet;
 import jmid.learn.typeprimitif.EvalTypePrimitif;
-import jmid.learn.collections.Collections;
+import jmid.learn.collections.EvalCollections;
+import jmid.learn.collections.exo.Exerices;
 
 
 public class RunnerEvaluation {
@@ -19,7 +22,10 @@ public class RunnerEvaluation {
         evaluations.add(new EvalTypeObjet());
         evaluations.add(new EvalCopieObjet());
         evaluations.add(new StructureControl());
-        evaluations.add(new Collections());
+        evaluations.add(new EvalCollections());
+        evaluations.add(new Exerices());
+        evaluations.add(new EvalException());
+        evaluations.add(new EvalPOO());
     } 
 
     public void run() {
